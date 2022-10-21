@@ -1,0 +1,61 @@
+<!doctype html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset="UTF-8">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Reserve a Hotel</title>
+ </head>
+ <body>
+<form oninput ="a.value=1500;
+                b.value=children.valueAsNumber * 300;
+                c.value=(1500) + (children.valueAsNumber * 300);
+                r.value=room.valueAsNumber;
+                m.value=((1500) + (children.valueAsNumber * 300)) * room.valueAsNumber;
+                n.value=night.valueAsNumber;
+                o.value=night.valueAsNumber * room.valueAsNumber * ((1500) + (children.valueAsNumber * 300))">
+<p>Research a Hotel:</p>
+<input list="hotelreserv" name="hotels" id="hotels" required>
+<datalist id="hotelreserv">
+    <option value="ศรีราชาคันทรีคลับ">
+    <option value="ศรีราชารีสอร์ท">
+    <option value="เคปทาวน์ ศรีราชา">
+    <option value="เซ็นทารา เรสซิเดนซ์และสวีท">
+    <option value="สีชัง โฮเต็ล แอนด์ สปา">
+</datalist>
+ 
+<p>Check-in<input type="date" name="checkin"required></p>
+ 
+<p>Nights<input type="number" name="night" id="night" min="1" max="30" step="1" value="1" required></p>
+ 
+ 
+<p>Rooms
+<input type="number" name="room" id="room" min="1" max="9" step="1" value="1" required></p>
+ 
+<p>Adults per room:
+<input type="..." name="adult" id="adult" min="1" max="2" step="1" value="1" required>
+Children per room:
+<input type="..." name="children" id="children" min="0" max="2" step="1" value="0" required>
+</p>
+ 
+จำนวนคืน(Night): <output name="u" for="night"></output><BR>
+ 
+จำนวนห้อง(Room): <output name="v" for="room"></output><BR>
+ 
+ราคาผู้ใหญ่(Adults): <output name="x" for="adult"></output><BR>
+ 
+ราคาเด็ก(Children): <output name="y" for="children"></output><BR>
+ 
+ราคาเด็ก+ผูุ้ใหญ่(adult+children): <output name="z" for="adult children"></output><BR>
+ 
+ราคา+ห้อง(Price + Room): <output name="m" for="adult children room"></output><BR>
+ 
+ราคาทั้งหมด(Total): <output name="n" for="adult children room night"></output><BR>
+ 
+<input type="submit" name="signup" value="Reserve>> จองเลย">
+</form>
+ 
+<!--<p>Note: The datalist datalist tag is not supported in older browsers.</p>-->
+ 
+ </body>
+</html>
